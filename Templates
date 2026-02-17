@@ -1,1 +1,55 @@
+name: "🐛 Bug Report"
+description: Bir hatayı bildirmek için bu formu kullanın
+title: "[BUG] "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hata bildirdiğiniz için teşekkürler 🙌  
+        Lütfen aşağıdaki bilgileri eksiksiz doldurun.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Hatanın Kısa Açıklaması
+      description: Sorunu kısa ve net şekilde özetleyin
+      placeholder: Örn. Giriş yaparken 500 hatası alıyorum
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Hatanın Tekrarlanma Adımları
+      description: Hatayı nasıl tekrar edebiliriz?
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Beklenen Davranış
+      description: Ne olmasını bekliyordunuz?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Ekran Görüntüsü (Varsa)
+      description: Varsa ekran görüntüsü ekleyin
+
+  - type: input
+    id: environment
+    attributes:
+      label: Ortam Bilgisi
+      description: OS, tarayıcı, uygulama versiyonu vb.
+      placeholder: Örn. Windows 11, Chrome 121, v1.2.0
 
